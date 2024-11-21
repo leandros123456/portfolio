@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro S</title>
+    <style>
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font: bold 14px/1.4 "Times New Roman";
+  background: #000;
+  color: white;
+}
+
+nav {
+  background-color: black;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+nav li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+
+nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    background-image: url('https://wallpapercave.com/wp/wp4850097.jpg');
+    background-size: cover;
+}
+
+.banner div h2, h5 {
+    color: white;
+}
+
+.banner div {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    width: 350vh;
+}
+
+span {
+    color: white;
+}
+
+.showcase-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    margin: 20px;
+    background-color: black;
+    border-radius: 10px;
+    border: 5px solid white;
+    text-align: center;
+}
+
+.showcase-box h3{
+    text-align: center;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.showcase-box span {
+    text-align: justify;
+}
+
+#contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+section ul li a {
+    color: white;
+    font-size: 10rem;
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#tools">Ferramentas utilizadas</a></li>
+            <li><a href="#section2">Projetos desenvolvidos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <div>
+            <h2>Leandro Sibim</h2>
+            <h5>Programador</h5>
+        </div>
+        <h5>Sou um programador apaixonado por tecnologia e resolução de problemas, com experiência em diversas
+            linguagens de programação como Python, JavaScript, Rust e C++. Tenho experiência na criação de aplicações
+            robustas, desde o planejamento até a implementação, passando pela fase de testes e manutenção.</h5>
+    </div>
+    <br>
+    <section id="tools">
+        <h2>Ferramentas utilizadas</h2>
+        <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Javascript</li>
+            <li>Shellscript</li>
+            <li>C</li>
+            <li>Rust</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <div class="showcase-box">
+            <h3>Interpretador de cálculo λ</h3>
+            <img src="https://miro.medium.com/v2/resize:fit:1018/1*e6FuOl6VvFZYphZ7LW16Fw.png">
+            <span>Um interpretador turing-completo capaz de reduzir adequadamente toda expressão λ para sua forma
+                normal.</span>
+        </div>
+        <div class="showcase-box">
+            <h3>Interpretador de cálculo λ</h3>
+            <img src="https://miro.medium.com/v2/resize:fit:1018/1*e6FuOl6VvFZYphZ7LW16Fw.png">
+            <span>Um interpretador turing-completo capaz de reduzir adequadamente toda expressão λ para sua forma
+                normal.</span>
+        </div>
+        <div class="showcase-box">
+            <h3>Interpretador de cálculo λ</h3>
+            <img src="https://miro.medium.com/v2/resize:fit:1018/1*e6FuOl6VvFZYphZ7LW16Fw.png">
+            <span>Um interpretador turing-completo capaz de reduzir adequadamente toda expressão λ para sua forma
+                normal.</span>
+        </div>
+        <div class="showcase-box">
+            <h3>Interpretador de cálculo λ</h3>
+            <img src="https://miro.medium.com/v2/resize:fit:1018/1*e6FuOl6VvFZYphZ7LW16Fw.png">
+            <span>Um interpretador turing-completo capaz de reduzir adequadamente toda expressão λ para sua forma
+                normal.</span>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contato</h2>
+        <ul>
+            <il>
+                (14)99717-3176
+            </il>
+            <il>
+                <a style="color: white; text-decoration: none;" href="github.com/defmc" target="_blank">Github</a>
+            </il>
+            <il>
+                <a style="color: white; text-decoration: none;" href="whatsapp.com" target="_blank">Whatsapp</a>
+            </il>
+        </ul>
+    </section>
+    <footer>
+        <hr>
+        <p>&copy 2024 Leandro Sibim. Todos os direitos reservados.</p> style="text-align: center">&copy 2024 Leandro Sibim. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
